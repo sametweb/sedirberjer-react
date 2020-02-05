@@ -14,12 +14,16 @@ const Welcome = () => {
         WhatsApp'dan iletişime geçin.
       </p>
       <p className="phone">
-        <a href="tel:90-212-611-2790" target="_blank">
+        <a href="tel:90-212-611-2790" rel="noopener noreferrer" target="_blank">
           <span>
             <i className="fa fa-phone"></i>(0212) 611 27 90
           </span>
         </a>
-        <a href="https://wa.me/905522373237" target="_blank">
+        <a
+          href="https://wa.me/905522373237"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <span>
             <i className="fa fa-whatsapp"></i>(0552) 237 32 37{" "}
           </span>

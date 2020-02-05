@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import HomePage from "./components/pages/HomePage";
@@ -7,14 +8,14 @@ import AboutPage from "./components/pages/AboutPage";
 import ContactPage from "./components/pages/ContactPage";
 import Footer from "./components/Footer";
 
-import { Route } from "react-router-dom";
+import { ProductsContext, data } from "./contexts/ProductsContext";
 
 import "./assets/css/index.css";
 import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
-    <React.Fragment>
+    <ProductsContext.Provider value={data}>
       <Header />
       <Route path="/" exact component={HomePage} />
       <Route path="/anasayfa" exact component={HomePage} />
@@ -22,7 +23,7 @@ function App() {
       <Route path="/hakkimizda.html" exact component={AboutPage} />
       <Route path="/bize-ulasin.html" exact component={ContactPage} />
       <Footer />
-    </React.Fragment>
+    </ProductsContext.Provider>
   );
 }
 
