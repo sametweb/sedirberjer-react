@@ -191,7 +191,7 @@ img {
   display: block;
   width: 100%;
 }
-.overlay img {
+.overlay > img {
   width: auto;
   max-width: 100%;
   height: auto;
@@ -464,14 +464,14 @@ footer p {
     max-height: none;
   }
 }
-.references .ref img {
+.references .ref > img {
   width: 48%;
   max-height: 350px;
   object-fit: cover;
   cursor: zoom-in;
 }
 @media (max-width: 768px) {
-  .references .ref img {
+  .references .ref > img {
     width: 100%;
     margin: 0 0 1rem 0;
   }

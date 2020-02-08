@@ -1,7 +1,7 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { ProductsContext } from "../../../contexts/ProductsContext";
 
-import Overlay from "./Overlay";
+import Overlay from "../Overlay";
 
 const Products = () => {
   const [imgToDisplay, setImgToDisplay] = useState(null);
@@ -17,7 +17,7 @@ const Products = () => {
           <div key={product.title} className="item">
             <img
               src={product.imgURL}
-              title={product.title}
+              alt={product.title}
               onClick={() => handleImageClick(index)}
             />
             {imgToDisplay === index ? (

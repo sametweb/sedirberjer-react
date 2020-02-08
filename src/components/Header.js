@@ -11,10 +11,10 @@ const Header = () => {
         </h1>
       </div>
       <nav>
-        <Link to="/">Anasayfa</Link>
-        <Link to="referanslar">Referanslarımız</Link>
-        <Link to="hakkimizda">Hakkımızda</Link>
-        <Link to="bize-ulasin">Bize Ulaşın</Link>
+        <Link to="index.html">Anasayfa</Link>
+        <Link to="referanslar.html">Referanslarımız</Link>
+        <Link to="hakkimizda.html">Hakkımızda</Link>
+        <Link to="bize-ulasin.html">Bize Ulaşın</Link>
       </nav>
     </header>
   );

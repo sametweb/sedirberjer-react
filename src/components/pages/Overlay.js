@@ -3,10 +3,13 @@ import React from "react";
 const Overlay = props => {
   return (
     <div className="overlay" onClick={() => props.handleImageClick(null)}>
-      <span>X</span>
+      <span>
+        {" "}
+        <i className="fa fa-times-circle"></i>
+      </span>
       <img
         src={props.src}
-        title={props.title}
+        alt={props.title}
         onClick={e => e.stopPropagation()}
       />
     </div>
